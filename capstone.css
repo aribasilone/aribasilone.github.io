@@ -64,3 +64,29 @@ progress{
     color:orangered;
     text-shadow: 1px 1px 3px #000000;
 }
+
+
+/* project.html specific css */
+#projH2{
+    /* color:rgb(24, 105, 105); */
+    text-shadow: #000 0pt 1pt 3pt;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.projTable th{
+    background-color: rgb(41, 45, 49,0.8);
+}
+
+.projTable th:hover{
+    background-color:rgb(20, 34, 26);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.projScreen{
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-right: 3%;
+}
