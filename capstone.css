@@ -14,7 +14,7 @@ div.body{
     color: black;
     text-align: left;
     line-height: 150%;
-    margin-right: 5%;
+    /* margin-right: 5%; */
 }
 
 a:link, a:visited{
@@ -37,7 +37,7 @@ table{
 
 th{
     background-color: rgb(243, 122, 57);
-    width: 94%;
+    width: 90%;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -45,6 +45,7 @@ th{
 th:hover{
     background-color:rgba(255, 89, 0);
     cursor: pointer;
+    text-decoration: none;
 }
 
 #arProto{
@@ -63,6 +64,14 @@ progress{
 .status{
     color:orangered;
     text-shadow: 1px 1px 3px #000000;
+}
+
+.code{
+    color: black;
+}
+
+b.code:hover{
+    text-decoration: underline;
 }
 
 

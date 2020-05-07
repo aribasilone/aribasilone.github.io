@@ -28,7 +28,7 @@
         <image id="capLogo" src="resources/capstone_logo.PNG" alt= "AR We There Yet? Logo"></image>
         <image id="arProto"src="resources/capestone_AR_proto.PNG" alt="AR Prototype Photo"></image>
         <p class="blurb">
-            <i class="blurb">AR We There Yet?</i> is an augmented-reality based wayfinding solution.
+            <i class="blurb">AR We There Yet?</i>&nbsp; is an augmented-reality based wayfinding solution.
             Available as a mobile app, it provides real-time, real-world overlay cues 
             to help users navigate large event grounds with ease. 
         </p>        
@@ -38,8 +38,13 @@
 
     <div class='body'>
         <h2>Project Status</h2>
-        <progress value="40" max="100"></progress>
-        <h3 class="status">Prototype In Development!</h3>  
+        <progress value="100" max="100"></progress>
+        <h3 class="status">Version 1.0 Developed!</h3> 
+
+        <iframe width="80%" height="315" src="https://www.youtube.com/embed/GJVQ1ebo0dI" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <p class="code">Code available on GitHub: <a href="https://github.com/monanshishah/Capstone"><b class="code">monanshishah/Capstone</b></a></p>
         <image src="resources/uwo.png" alt="UWO Logo"></image>      
     </div>
 
@@ -49,11 +54,16 @@
         <nav>
             <h2>Documentation</h2>
             <table>
-                <tr>
-                    <th><a href="resources/Proposal.pdf" target= "_blank" class="boxes"><p> Proposal</p></a></th>
+                <tr onclick="window.open('resources/User Manual.pdf', '_blank');">
+                    <th><p> User Manual</p></a></th>
                 </tr>
-                <tr>
-                    <th><a class="boxes" onclick="clickFunct()"><p>SRS</p></a></th>
+                
+                <tr onclick="window.open('resources/Proposal.pdf', '_blank');">
+                    <th><p> Proposal</p></a></th>
+                </tr>
+                
+                <tr onclick="clickFunct()">
+                    <th><p>SRS</p></a></th>
                 </tr>
             </table>                   
             <image src="resources/uwo.png" alt="UWO Logo"></image>
