@@ -45,10 +45,10 @@ h1{
     height:25px;
 }
 
-#mail{
-    height: 20px;
-    padding-bottom: 2.5px;
-}
+/* #mail{ */
+    /* height: 20px; */
+    /* padding-bottom: 2.5px; */
+/* } */
 
 /* #li{
     width: 30px;
@@ -95,3 +95,93 @@ th:hover{
 a.boxes:link, a.boxes:visited{
     text-decoration: none;    
 }
+
+
+/*slideshow styling*/
+body{
+    height:100%;
+}
+.slide-container{
+    margin-top: 20px;
+    /* height:30%; */
+}
+.slide{
+    /* height:100%; */
+    width:56%;
+    display: inline-block;
+    position:relative;
+    
+}
+.slide-img{
+    /* width: 56%; */
+    width:100%;
+    max-height: 400px;
+    /* height:100%; */
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    bottom: 45%;
+
+    width: auto;
+    padding: 16px;
+    /* color: white; */
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+    user-select: none;
+}
+.prev{
+    left:0;
+}
+.next {
+    right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+#dot-container{
+    position: absolute;
+    bottom: 12%;
+    left:45%;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+
