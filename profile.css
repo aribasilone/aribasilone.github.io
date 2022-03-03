@@ -1,26 +1,28 @@
 /*
 Style sheet for personal webpage
 By: Arianna Basilone
-copyright 2019
+copyright 2022
 */
 
 /*ref = profile*/
 
 
 *{
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Heebo', sans-serif;
     text-align: center;
-    color: white;
+    /* color: white; */
 }
 
 html{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.2)), url('resources/backgroundBridge.jpg');
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, rgba(27, 45, 47, 0.75), rgba(27,45,47,0.4)), url('resources/backgroundRain.jpg');
     height: 100%; 
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
-
     background-attachment: fixed;
+
+    color: white;
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
@@ -30,84 +32,284 @@ html{
     }
 } */
 
-h1{
-    margin-top: 10%;
-    font-size: 40pt;
-    line-height: 20%;
-    /* text-shadow: 1px 1px 3px #000000; */
+p{
+    line-height: 1.5;
+}
+
+a{
+    color: white;
+}
+p, a, ul{
+    font-size: 1.3em;
+}
+
+h1{    
+    margin-top: 9%;
+    margin-bottom: 0em;
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+h1, h2 {
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+h3{
+    font-size: 1.3em;
+    margin-top: 3em;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 .right{
     float: right;
 }
 .icon{
-    width:25px;
-    height:25px;
-}
-
-/* #mail{ */
-    /* height: 20px; */
-    /* padding-bottom: 2.5px; */
-/* } */
-
-/* #li{
-    width: 30px;
-} */
-
-th{
-    background-color: cadetblue;
-    padding: 2%;
-    /* padding: 14px 25px; */
-    text-align: center;
-    font-size: 1.4vw;
-    width:25%;
-    /*border-style: solid;
-    border-color: #000000a1;
-    border-width: 3px;*/
-    display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width:45px;
+    height:45px;
 }
 
 .bio{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 12%;
+    margin-right: 12%;
     text-shadow: 2px 1px 2px #000000;
 }
 
-table{
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-}
-
-
-th:hover{
-    background-color:rgba(24, 105, 105, 0.842);
-    padding: 3%;
-    /* padding: 24px 35px; */
-    /* text-decoration: underline; */
-    margin-top: 0px;
+.statusBar{
     margin-bottom: 0px;
+    border-radius: 5px;
+    padding: 15px 1em;
+    background-color: #1B2D2F;
+    box-shadow: 2px 2px 3px cadetblue;
+   
+}
+.fadein{ 
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s; /* Firefox < 16 */
+    -ms-animation: fadein 3s; /* Internet Explorer */
+    -o-animation: fadein 3s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
 }
 
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+.statusEmphasis{
+    text-decoration: underline #F0803C;
+    font-size: 1em;
+    font-weight: normal;
+}
+.statusEmphasis:hover{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+.statusLabel{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+
+/* navigation menu styling */
+.navBar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navBar a{
+    background-color: cadetblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* padding: 14px 25px; */
+    text-align: center;
+    font-size: 1.4em;
+    width: 25%;
+
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.navBar a, .navBar .fa-caret-down, .navBar .fa-home{
+    color: #1B2D2F;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    background-color:rgba(34, 85, 96, 0.9);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    box-shadow:1px 1px 1px #000000;
+    color:#FFFFFF;
+    text-shadow: 1px 1px 3px #1B2D2F;
+}
+.navBar a:hover .fa-caret-down, .navBar a:hover .fa-home{
+    color:#FFFFFF;
+    text-shadow: 1px 1px 3px #1B2D2F;
+}
 
 a.boxes:link, a.boxes:visited{
     text-decoration: none;    
 }
+a.activePage{
+    border-bottom: 4px solid #F0803C;
+}
 
+.navBar img{
+    height: 0.9em;
+    width: 0.9em;
+}
+
+.dropdown{
+    width: 25%;
+}
+.dropdown > a, .dropdown > a:hover{
+    margin-bottom: 0px;
+}
+.navBar .dropContent a, .navBar .dropdown a{
+    width: 100%;
+}
+
+.navBar .dropContent a{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*dropdown / fly-out menu*/
+.dropContent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    flex-direction: column;
+    width: 24.65%;
+}
+
+.dropdown:hover .dropContent{
+    display: flex;
+}
+
+/* General Image Styling*/
+.imgGeneral{
+    display: block;
+    height: 250px;  
+    margin: 35px auto 15px auto;
+    border: 5px solid #1B2D2F;
+    box-shadow: 2px 2px 3px cadetblue;
+}
+
+/*Default Button Styling*/
+button{
+    border: none;
+    background-color: cadetblue;
+    color:#1B2D2F;
+    font-size: 1.3em;
+    font-weight: bold;    
+
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /* border-radius: 1.5em; */
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:rgba(34, 85, 96, 0.9);
+    color:#FFFFFF;
+    text-shadow: 1px 1px 3px #1B2D2F;
+}
+
+/*icon boxes styling*/
+.collabContainer{
+    margin: 25px 12%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-bottom: 1px;
+    padding-top: 0.5em;
+}
+.collab{
+    color: #1B2D2F;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px  cadetblue;
+    margin: 1em;
+}
+.homeIconBoxes{
+    display: inline-block;
+    padding: 20px;
+    background-color: #1B2D2F;
+    box-shadow: 2px 2px 3px cadetblue;
+    border-radius: 5px;
+    margin: 10px 25px;
+}
+.fa.collabIcons{
+    font-size: 45px;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 7px #F0803C;
+}
+
+.collabContainer button{
+    display: block;
+    margin: 1em auto;
+}
+/* footer styling*/
+footer{
+  padding-bottom: 0.5em;  
+  border-top:solid 2px #1B2D2F;
+  box-shadow: inset 0px 2px 0px cadetblue;
+}
+.footerIconsBox{
+    padding-top: 10px; 
+}
+.footerText{
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    background-color: cadetblue;
+    color:#1B2D2F;
+   
+}
 
 /*slideshow styling*/
 body{
     height:100%;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .slide-container{
-    margin-top: 20px;
+    margin-top: 35px;
     /* height:30%; */
 }
 .slide{
     /* height:100%; */
-    width:56%;
+    /* width:56%; */
     display: inline-block;
     position:relative;
     
@@ -127,7 +329,8 @@ body{
 
     width: auto;
     padding: 16px;
-    /* color: white; */
+    color: cadetblue;
+    text-shadow: 1px 1px 1px #1B2D2F;
     font-weight: bold;
     font-size: 24px;
     transition: 0.6s ease;
@@ -143,7 +346,7 @@ body{
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(27,45,47,0.8);
 }
 
 #dot-container{
@@ -156,7 +359,7 @@ body{
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: rgb(255, 255, 255);
+    background-color: cadetblue;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -164,7 +367,7 @@ body{
 
 
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #1B2D2F;
 }
   
 /* Fading animation */

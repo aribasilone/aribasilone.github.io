@@ -1,78 +1,106 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
-    <title>Arianna Basilone</title>
+    <title>Arianna Basilone - Profile</title>
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_96x96.png" sizes="96x96">
+    <!--meta data/SEO-->
     <meta charset="UTF-8">
-    <!--script type='text/javascript' src='profileScript.js'></script-->
-    
-    <!--link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">--> 
-    <link rel="stylesheet" href="profile.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel = "stylesheet">  
+    <meta name = "description" content="Professional profile of Arianna Basilone: Software Developer and Business Advisor.">
+    <meta name = "keywords" content="Software Engineering, Entrepreneur, Business, Freelance, Web Developer"> 
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--styling & scripts-->
+    <link rel="stylesheet" href="profile.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="profile.js"></script> 
+    <script src="buttons.js"></script> 
 </head>
 
 <header>
     
     <h1 class='center'> Arianna Basilone </h1>
-    <h2> Software Engineering | Ivey Business Graduate</h2>
+    <h2> Software Engineering | Business & Digital Marketing Consultant</h2>
+    <p class="statusBar fadein">
+        <span class="statusLabel">Status :</span> Currently taking on <strong><a href="freelance.html" class="statusEmphasis">freelance work</a></strong> & seeking full-time opportunities.
+    </p>
+    <div>
+        <nav class="navBar" aria-label="Main Navigation">
+            <a href="index.html" class ="boxes activePage"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
+            <a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes">Resume</a>
+            <div class="dropdown">
+                <a href="projects.html" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span class="fa fa-caret-down"></span></a>
+                <div class="dropContent">
+                    <a href="capstone.html" class="boxes">Capstone</a>
+                    <a href="projects.html" class="boxes">Side Projects </a>
+                    <a href="freelance.html"class="boxes">Freelance Work</a>
+                </div>                
+            </div> 
+            <a href="skillsets.html" class="boxes">Skillsets</a>          
+        </nav>
+    </div>
     
 </header>
 
 <body>
     <div>
-        <p class="bio">Welcome! I am a software developer with a professional business background and interest in 
-            entrepreneurship. As a new graduate <b>(Spring 2020)</b>, I am ready to work full-time for
-            your dynamic company and team.
-            Have a project, idea, or startup instead? I can be of assistance there too!
-            Feel free to navigate this page and learn more about me.</p>        
+        <p class="bio">
+            Welcome! I am a software developer with a professional business background and interest in 
+            entrepreneurship 
+            - 2020 graduate in BESc. Software Engineering & HBA Business Administration. 
+            
+        </br>Feel free to navigate this site and learn more about me.
+        </p>           
     </div>
-    <div>
-        <!-- icons -->
-        <a href="mailto:abasilone.hba2020@ivey.ca"><image id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></image></a>
-        &nbsp;
-        <a href="https://github.com/aribasilone" target="_blank"> <image id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></image></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank"><image id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></image></a>
-    </div>
-
-    </br>
-
-    <div>
-        <nav>
-            <table>
-                <tr>
-                    <th><a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes"><p>Resume</p></a></th>
-                    <th><a href="capstone.html" class="boxes"><p> Capstone</p></a></th>
-                    <th><a href="projects.html" class="boxes"><p>Side Projects</p></a></th>
-                </tr>
-            </table>                   
-           
-        </nav>
-    </div>
-
+    <img src="resources/grad_rings.jpg" alt="Ivey Graduate Ring and Engineering Iron Ring" class="imgGeneral">
+    <p class="bio">
+        Dual degree and dual minded: role versatility and holistic approach. 
+    </p>
+    
     <!--profile pics slideshow-->
     <div class="slide-container">
         <div class="slide">
             <img src="resources/profilepics/eng_grad.jpg" class="slide-img fade" alt="Engineering Graduate" style= "display:block">
-            <img src = "resources/profilepics/aribasilone.jpg" class="slide-img fade" alt="Linkedin Headshot">
+            <img src = "resources/profilepics/aribasilone.jpg" class="slide-img fade" alt="LinkedIn Headshot">
             
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <div id="dot-container">
-                
+            <div id="dot-container">            
             </div>
-        </div>
-
-        
-
-        
+        </div>        
     </div>
+    </br> 
     
+     
+    <div class="collabContainer">
+        <div class="homeIconBoxes">
+            <span class="fa fa-rocket collabIcons" aria-hidden="true"></span>
+        </div>
+        <div class="homeIconBoxes">
+            <span class="fa fa-lightbulb-o collabIcons" aria-hidden="true"></span>
+        </div>
+        <div class="homeIconBoxes">
+            <span class="fa fa-leaf collabIcons" aria-hidden="true"></span>
+        </div>
+        <p class="collab">
+            Have a project, idea, or startup instead? I can be of assistance there too!
+        </p> 
+        <button type="button" name="Collab button" onclick="collabButton()">Contact to Collaborate</button>
+    </div>
 </body>
 
 <footer>
-    <p>&copy; Arianna Basilone 2020</p>
+    <!-- icons -->
+    <div class="footerIconsBox">        
+        <a href="mailto:abasilone.hba2020@ivey.ca" title="Email link"><img id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></a>
+        &nbsp;
+        <a href="https://github.com/aribasilone" target="_blank" title="Link to GitHub profile"> <img id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank" title="Link to LinkedIn profile"><img id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></a>
+    </div>
+    <p class="footerText">&copy; Arianna Basilone 2022</p>
 </footer>
 
 </html>
