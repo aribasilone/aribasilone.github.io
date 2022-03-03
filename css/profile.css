@@ -15,7 +15,7 @@ copyright 2022
 
 html{
     background-color: #000000;
-    background-image: linear-gradient(to bottom, rgba(27, 45, 47, 0.75), rgba(27,45,47,0.4)), url('resources/backgroundRain.jpg');
+    background-image: linear-gradient(to bottom, rgba(27, 45, 47, 0.75), rgba(27,45,47,0.4)), url('../resources/backgroundRain.jpg');
     height: 100%; 
     background-position: center;
     /* background-repeat: no-repeat; */
