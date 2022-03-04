@@ -14,86 +14,88 @@
     <link rel="stylesheet" href="css/profile.css">
     <link rel = "stylesheet" href="css/capstone.css">
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/buttons.js"></script>   
 </head>
 
 <header>
     
-    <h1 class='center'> Arianna Basilone </h1>
+    <h1> Arianna Basilone </h1>
     <h2> Capstone</h2>
-
-    <nav>
-        <a href="index.html"><image id='homePg' class="icon" src="resources/icons/home.jpg" alt="Back to Profile Icon"></br>Back to Profile</image></a>
-    </nav>
+    <div>
+        <nav class="navBar" aria-label="Main Navigation">
+            <a href="index.html" class ="boxes"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
+            <a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes">Resume</a>
+            <div class="dropdown">
+                <a href="projects.html" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span class="fa fa-caret-down"></span></a>
+                <div class="dropContent">
+                    <a href="capstone.html" class="boxes activePage">Capstone</a>
+                    <a href="projects.html" class="boxes">Side Projects </a>
+                    <a href="freelance.html"class="boxes">Freelance Work</a>
+                </div>                
+            </div> 
+            <a href="skillsets.html" class="boxes">Skillsets</a>          
+        </nav>
+    </div>
     
 </header>
 
 <body>
     <div class='body'>
-        <br></br>
-        <image id="capLogo" src="resources/capstone_logo.PNG" alt= "AR We There Yet? Logo"></image>
-        <image id="arProto"src="resources/capestone_AR_proto.PNG" alt="AR Prototype Photo"></image>
+        <img id="capLogo" src="resources/capstone_logo.PNG" alt= "AR We There Yet? Logo"></img>
+        <img id="arProto"src="resources/capestone_AR_proto.PNG" alt="AR Prototype Photo"></img>
         <p class="blurb">
-            <i class="blurb">AR We There Yet?</i>&nbsp; is an augmented-reality based wayfinding solution.
+            <em>AR We There Yet?</em>&nbsp; is an augmented-reality based wayfinding solution.
             Available as a mobile app, it provides real-time, real-world overlay cues 
             to help users navigate large event grounds with ease. 
         </p>        
     </div>
 
-    <br></br>
-
     <div class='body'>
-        <h2>Project Status</h2>
-        <progress value="100" max="100"></progress>
-        <h3 class="status">Version 1.0 Developed!</h3> 
+        <h3>Project Status</h3>
+        <progress value="100" max="100"></progress> 
+        <p class="statusBar">
+            <span class="statusLabel">Version 1.0 Developed!</span>
+        </p>  
 
-        <iframe width="80%" height="315" src="https://www.youtube.com/embed/GJVQ1ebo0dI" frameborder="0"
+        <iframe width="90%" height="385" src="https://www.youtube.com/embed/GJVQ1ebo0dI" frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-        <p class="code">Code available on GitHub: <a href="https://github.com/monanshishah/Capstone"><b class="code">monanshishah/Capstone</b></a></p>
-        <image src="resources/uwo.png" alt="UWO Logo"></image>      
+        <p class="code">Code available on GitHub: <a class="code" href="https://github.com/monanshishah/Capstone"><b>monanshishah/Capstone</b></a></p>
+        <img src="resources/uwo.png" alt="UWO Logo"></img>      
     </div>
 
-    <br></br>
-
     <div class="body">
-        <nav>
-            <h2>Documentation</h2>
+        <h3>Documentation</h3>
+        <nav>    
             <table>
-                <tr onclick="window.open('resources/User Manual.pdf', '_blank');">
+                <tr onclick="clickUserManButton()">
                     <th><p> User Manual</p></a></th>
                 </tr>
                 
-                <tr onclick="window.open('resources/Proposal.pdf', '_blank');">
+                <tr onclick="clickPropButton()">
                     <th><p> Proposal</p></a></th>
                 </tr>
                 
-                <tr onclick="clickFunct()">
+                <tr onclick="clickSRSButton()">
                     <th><p>SRS</p></a></th>
                 </tr>
             </table>                   
-            <image src="resources/uwo.png" alt="UWO Logo"></image>
+            <img src="resources/uwo.png" alt="UWO Logo"></img>
         </nav>
-    </div>
-
-    <script>
-        function clickFunct() {
-          alert("Please contact to request a copy of the SRS document");
-        }
-    </script>
-    
+    </div>    
 </body>
 
 <footer>
-    <p>&copy; Arianna Basilone 2020</p>
-    <nav>
-        <!-- icons -->
-        <a href="mailto:abasilone.hba2020@ivey.ca"><image id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></image></a>
+    <!-- icons -->
+    <div class="footerIconsBox">        
+        <a href="mailto:abasilone.hba2020@ivey.ca" title="Email link"><img id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></a>
         &nbsp;
-        <a href="https://github.com/aribasilone" target="_blank"> <image id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></image></a>
+        <a href="https://github.com/aribasilone" target="_blank" title="Link to GitHub profile"> <img id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></a>
         &nbsp;
-        <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank"><image id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></image></a>
-    </nav>
+        <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank" title="Link to LinkedIn profile"><img id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></a>
+    </div>
+    <p class="footerText">&copy; Arianna Basilone 2022</p>
 </footer>
 
 </html>

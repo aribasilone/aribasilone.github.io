@@ -13,43 +13,53 @@
         <!--styling & scripts-->
         <link rel="stylesheet" href="css/profile.css">
         <link rel = "stylesheet" href="css/capstone.css">
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel = "stylesheet">   
+        <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     </head>
 
     <header>
-        <h1 class='center'> Arianna Basilone </h1>
-        <h2> Side Projects</h2>
-    
-        <nav>
-            <a href="index.html"><image id='homePg' class="icon" src="resources/icons/home.jpg" alt="Back to Profile Icon"></br>Back to Profile</image></a>
-        </nav>
+        <h1>Arianna Basilone</h1>
+        <h2>Side Projects</h2>
+        <div>
+            <nav class="navBar" aria-label="Main Navigation">
+                <a href="index.html" class ="boxes"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
+                <a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes">Resume</a>
+                <div class="dropdown">
+                    <a href="projects.html" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span class="fa fa-caret-down"></span></a>
+                    <div class="dropContent">
+                        <a href="capstone.html" class="boxes">Capstone</a>
+                        <a href="projects.html" class="boxes activePage">Side Projects </a>
+                        <a href="freelance.html"class="boxes">Freelance Work</a>
+                    </div>                
+                </div> 
+                <a href="skillsets.html" class="boxes">Skillsets</a>          
+            </nav>
+        </div>
+        
     </header>
     
     <body>
-        
         <div class="body">
             <nav>
-                <h2 id="projH2">View Apps</h2>
+                <h3 id="projH3">View Apps</h3>
                 <table class="projTable">
                     <tr>
-                        <th>
+                        <td>
                             <a href="https://aribasilone.github.io/aribasilone.github.io-weatherApp/" target= "_blank" class="boxes">
-                                <image class= "projScreen" src="resources/weatherapp.PNG" alt="Weather App Screenshot"></image>
-                                <h3> Weather App</h3>
-                                <p><i>A React app that provides weather information for a given destination. Uses various api calls to verify location and then grab corresponding data.</i></p>
+                                <img class= "projScreen" src="resources/weatherapp.PNG" alt="Weather App Screenshot"></img>
+                                <h4> Weather App</h4>
+                                <p><em>A React app that provides weather information for a given destination. Uses various api calls to verify location and then grab corresponding data.</em></p>
                             </a>
-                            
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>
+                        <td>
                             <a href="https://aribasilone.github.io/aribasilone.github.io-soundfxkit/" target= "_blank" class="boxes">
-                                <image class= "projScreen" src="resources/soundfx.PNG" alt="Sound FX Kit Screenshot"></image>
-                                <h3>Sound FX Kit</h3>
-                                <p><i>Interactive webpage for playing various cartoon and comedy sound effects.</i></p>
+                                <img class= "projScreen" src="resources/soundfx.PNG" alt="Sound FX Kit Screenshot"></img>
+                                <h4>Sound FX Kit</h4>
+                                <p><em>Interactive webpage for playing various cartoon and comedy sound effects.</em></p>
                             </a>
-                            
-                        </th>
+                        </td>
                     </tr>
                 </table>                   
                 
@@ -59,15 +69,15 @@
     </body>
 
     <footer>
-        <p>&copy; Arianna Basilone 2020</p>
-        <nav>
-            <!-- icons -->
-            <a href="mailto:abasilone.hba2020@ivey.ca"><image id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></image></a>
+        <!-- icons -->
+        <div class="footerIconsBox">        
+            <a href="mailto:abasilone.hba2020@ivey.ca" title="Email link"><img id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></a>
             &nbsp;
-            <a href="https://github.com/aribasilone" target="_blank"> <image id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></image></a>
+            <a href="https://github.com/aribasilone" target="_blank" title="Link to GitHub profile"> <img id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></a>
             &nbsp;
-            <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank"><image id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></image></a>
-        </nav>
+            <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank" title="Link to LinkedIn profile"><img id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></a>
+        </div>
+        <p class="footerText">&copy; Arianna Basilone 2022</p>
     </footer>
 
 </html>

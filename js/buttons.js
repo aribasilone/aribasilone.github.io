@@ -14,3 +14,17 @@ function collabButton(){
     
     window.location.href = link;      
 }
+
+/*Capstone specific buttons*/
+
+function clickUserManButton(){
+    window.open('resources/User Manual.pdf', '_blank');
+}
+
+function clickPropButton(){
+    window.open('resources/Proposal.pdf', '_blank');
+}
+
+function clickSRSButton() {
+    alert("Please contact to request a copy of the SRS document");
+}

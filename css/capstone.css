@@ -1,58 +1,37 @@
 div.body{
-    background-color: #f5f5f5cb;
-    background-position: center;
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 65%;
-
+    background-color: rgba(255,255,255,0.7);
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 2em;
     border-style: ridge;
-
     overflow: auto;
-}
-.blurb{
-    color: black;
-    text-align: left;
-    line-height: 150%;
-    /* margin-right: 5%; */
-}
-
-a:link, a:visited{
-    text-decoration: none;    
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 #capLogo{
+    margin-top: 3em;
+    margin-bottom: 1em;
     width: 100%;
     /* height: 10%; */
-}
-
-table{
-    width: 100%;
-}
-
-th{
-    background-color: rgb(243, 122, 57);
-    width: 90%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-th:hover{
-    background-color:rgba(255, 89, 0);
-    cursor: pointer;
-    text-decoration: none;
 }
 
 #arProto{
     height: 100%;
     width: 50%;
     float: left;
-    margin-right: 3%;
+    margin-right: 1em;
+}
+
+.blurb{
+    color: #1B2D2F;
+    text-align: left;
+    margin: 0em 1em;
+}
+
+h3{
+    font-size: 1.3em;
+    margin-top: 1em;
+    color: #1B2D2F;
+    text-shadow: 1px 0px 3px #FFFFFF;
 }
 
 progress{
@@ -61,41 +40,79 @@ progress{
     background: orangered;
 }
 
-.status{
-    color:orangered;
-    text-shadow: 1px 1px 3px #000000;
-}
-
 .code{
-    color: black;
+    color: #1B2D2F;
 }
 
-b.code:hover{
+a:link, a:visited{
+    text-decoration: none;    
+}
+
+a.code{
+    font-size: 1em;
+}
+
+a.code:hover{
     text-decoration: underline;
 }
 
 
-/* project.html specific css */
-#projH2{
+table{
+    width: 100%;
+    color: #1B2D2F;
+}
+
+th{
+    background-color: #f37a39;
+    width: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+th:hover{
+    background-color:#ff5900;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+/* Project specific css */
+#projH3{
     /* color:rgb(24, 105, 105); */
-    text-shadow: #000 0pt 1pt 3pt;
-    margin-top: 3%;
     font-weight: bold;
 }
-
-.projTable th{
-    background-color: rgb(41, 45, 49,0.8);
+h4{
+    font-size: 1em;
+    text-shadow: 1px 1px 2px #000000;
 }
 
-.projTable th:hover{
-    background-color:rgb(20, 34, 26);
+.boxes p{
+    font-size: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.projTable{
+    border-spacing: 0em 2em;
+    padding: 0em 1em 0em 1em;
+    margin-top: -1em;
+}
+
+.projTable td{
+    background-color: rgba(33, 83, 94, 0.8);
+}
+
+.projTable td:hover{
+    background-color:#1B2D2F;
     cursor: pointer;
     text-decoration: none;
 }
 
 .projScreen{
-    height: 100%;
+    /* height: 100%; */
     width: 50%;
     float: left;
-    margin-right: 3%;
+    margin-right: 1em;
 }
