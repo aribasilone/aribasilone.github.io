@@ -75,9 +75,6 @@ function arrowFunct(i){
     }
      
     //set slide index and dots 
-    console.log(rl);
-    console.log(i);
-    console.log(slideIndex);
     if(rl==0){
         if(slideIndex-1<0){
             slideIndex=slides.length-1;
@@ -94,7 +91,7 @@ function arrowFunct(i){
             slideIndex+=1;
         }
     }
-    console.log(slideIndex);
+    
     setDots();
 
 }
@@ -108,24 +105,24 @@ function slideFunct(i){
 
         switch (i){
             case 0: 
-                slideA="resources/profilepics/concert_photography_3.JPG";
-                slideB="resources/profilepics/concert_photography_2.JPG";
-                slideC="resources/profilepics/concert_photography.JPG";
+                slideA="resources/profilepics/concert_photography_3_1000px.JPG";
+                slideB="resources/profilepics/concert_photography_2_1000px.JPG";
+                slideC="resources/profilepics/concert_photography_1000px.JPG";
                 break;
             case 1: ;
-                slideA="resources/profilepics/concert_photography_2.JPG";
-                slideB="resources/profilepics/concert_photography.JPG";
-                slideC="resources/profilepics/concert_photography_3.JPG";
+                slideA="resources/profilepics/concert_photography_2_1000px.JPG";
+                slideB="resources/profilepics/concert_photography_1000px.JPG";
+                slideC="resources/profilepics/concert_photography_3_1000px.JPG";
                 break;
             case 2: ;
-                slideA="resources/profilepics/concert_photography.JPG";
-                slideB="resources/profilepics/concert_photography_3.JPG";
-                slideC="resources/profilepics/concert_photography_2.JPG";
+                slideA="resources/profilepics/concert_photography_1000px.JPG";
+                slideB="resources/profilepics/concert_photography_3_1000px.JPG";
+                slideC="resources/profilepics/concert_photography_2_1000px.JPG";
                 break;
             default:  
-                slideA="resources/profilepics/concert_photography_2.JPG";
-                slideB="resources/profilepics/concert_photography.JPG";
-                slideC="resources/profilepics/concert_photography_3.JPG";
+                slideA="resources/profilepics/concert_photography_2_1000px.JPG";
+                slideB="resources/profilepics/concert_photography_1000px.JPG";
+                slideC="resources/profilepics/concert_photography_3_1000px.JPG";
                 break;
         }
 

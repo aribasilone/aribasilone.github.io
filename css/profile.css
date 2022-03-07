@@ -224,6 +224,12 @@ a.activePage{
     box-shadow: 2px 2px 3px cadetblue;
 }
 
+@media only screen and (max-width: 768px) {
+    .imgGeneral{
+        max-height: 200px;
+    }
+}
+
 /*Default Button Styling*/
 button{
     border: none;
@@ -267,6 +273,12 @@ button:hover{
     border-radius: 5px;
     margin: 10px 25px;
 }
+
+@media only screen and (max-width: 768px) {
+    .homeIconBoxes{
+        margin: 5px;
+    }
+}
 .fa.collabIcons{
     font-size: 45px;
     height: 45px;
@@ -305,6 +317,8 @@ body{
 }
 .slide-container{
     margin-top: 35px;
+    margin-left: 12%;
+    margin-right: 12%;
     /* height:30%; */
 }
 .slide{
