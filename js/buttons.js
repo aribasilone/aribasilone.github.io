@@ -1,3 +1,33 @@
+/*Nav Menu Buttons*/
+function mobileNavButton(){
+    var x = document.getElementById("mainNav");
+    var menuIcon = document.querySelector("#menuIcon span")
+    if (x.className === "navBar") {
+        x.className += " responsive";
+        menuIcon.className="fa";
+        menuIcon.className+=" fa-times";
+    } else {
+        x.className = "navBar";
+        menuIcon.className="fa";
+        menuIcon.className+=" fa-bars";
+    }
+}
+
+function projDropdownButton(){
+    var p = document.getElementById("projDropContent");
+    var projIcon = document.getElementById("projIcon");
+    if (p.className === "dropContent") {
+        p.className += " dropVisible";
+        projIcon.className="fa";
+        projIcon.className+=" fa-caret-up";
+    } else {
+        p.className = "dropContent";
+        projIcon.className="fa";
+        projIcon.className+=" fa-caret-down";
+    }
+}
+
+/*General Buttons*/
 function contactButton(){
     var link = "mailto:abasilone.hba2020@ivey.ca"
             + "?subject=Arianna Basilone Freelance - Request for Quote"

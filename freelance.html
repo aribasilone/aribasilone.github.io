@@ -23,18 +23,19 @@
     <h1 class='center'> Arianna Basilone </h1>
     <h2> Freelance & Contract Work</h2>
     <div>
-        <nav class="navBar" aria-label="Main Navigation">
+        <nav id="mainNav" class="navBar" aria-label="Main Navigation">
+            <a id="menuIcon" href="javascript:void(0);" class="boxes" onclick="mobileNavButton()" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span></a> 
             <a href="index.html" class ="boxes"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
             <a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes">Resume</a>
             <div class="dropdown">
-                <a href="projects.html" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span class="fa fa-caret-down"></span></a>
-                <div class="dropContent">
+                <a  href="javascript:void(0);" class="boxes" onclick="projDropdownButton()" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span id="projIcon" class="fa fa-caret-down"></span></a>
+                <div id="projDropContent" class="dropContent">
                     <a href="capstone.html" class="boxes">Capstone</a>
                     <a href="projects.html" class="boxes">Side Projects </a>
                     <a href="freelance.html"class="boxes activePage">Freelance Work</a>
                 </div>                
             </div> 
-            <a href="skillsets.html" class="boxes">Skillsets</a>          
+            <a href="skillsets.html" class="boxes">Skillsets</a>         
         </nav>
     </div>
     
