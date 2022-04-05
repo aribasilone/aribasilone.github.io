@@ -27,11 +27,11 @@
     </p>
     <div>
         <nav id="mainNav" class="navBar" aria-label="Main Navigation">
-            <a id="menuIcon" href="javascript:void(0);" class="boxes" onclick="mobileNavButton()" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span></a> 
-            <a href="index.html" class ="boxes activePage"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
+            <a id="menuIcon" href="javascript:void(0);" class="boxes" onclick="mobileNavButton(this)" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span></a> 
+            <a href="index.html" class ="boxes activePage" aria-current="page"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
             <a href="resources/AB_Resume.pdf" target= "_blank" class ="boxes">Resume</a>
             <div class="dropdown">
-                <a  href="javascript:void(0);" class="boxes" onclick="projDropdownButton()" class="boxes" aria-haspopup="true" aria-expanded="false">Projects <span id="projIcon" class="fa fa-caret-down"></span></a>
+                <a  href="javascript:void(0);" class="boxes" onclick="projDropdownButton(this);" aria-haspopup="true" aria-expanded="false">Projects <span id="projIcon" class="fa fa-caret-down"></span></a>
                 <div id="projDropContent" class="dropContent">
                     <a href="capstone.html" class="boxes">Capstone</a>
                     <a href="projects.html" class="boxes">Side Projects </a>

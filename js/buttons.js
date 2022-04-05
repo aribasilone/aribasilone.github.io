@@ -1,29 +1,33 @@
 /*Nav Menu Buttons*/
-function mobileNavButton(){
+function mobileNavButton(elm){
     var x = document.getElementById("mainNav");
     var menuIcon = document.querySelector("#menuIcon span")
     if (x.className === "navBar") {
         x.className += " responsive";
         menuIcon.className="fa";
         menuIcon.className+=" fa-times";
+        elm.setAttribute('aria-expanded', "true");
     } else {
         x.className = "navBar";
         menuIcon.className="fa";
         menuIcon.className+=" fa-bars";
+        elm.setAttribute('aria-expanded', "false");
     }
 }
 
-function projDropdownButton(){
+function projDropdownButton(elm){
     var p = document.getElementById("projDropContent");
     var projIcon = document.getElementById("projIcon");
     if (p.className === "dropContent") {
         p.className += " dropVisible";
         projIcon.className="fa";
         projIcon.className+=" fa-caret-up";
+        elm.setAttribute('aria-expanded', "true");
     } else {
         p.className = "dropContent";
         projIcon.className="fa";
         projIcon.className+=" fa-caret-down";
+        elm.setAttribute('aria-expanded', "false");
     }
 }
 
