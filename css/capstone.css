@@ -8,6 +8,12 @@ div.body{
     overflow: auto;
 }
 
+@media only screen and (max-width: 768px) {
+    div.body{
+        margin: 2em 0%;
+    }
+}
+
 #capLogo{
     margin-top: 1.3em;
     margin-bottom: 1em;
@@ -56,6 +62,8 @@ progress::-webkit-progress-value {
 
 .code{
     color: #1B2D2F;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 a:link, a:visited{
@@ -64,10 +72,32 @@ a:link, a:visited{
 
 a.code{
     font-size: 1em;
+    font-weight: bold;
 }
 
 a.code:hover{
     text-decoration: underline;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .videoWrapper iframe{
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 
@@ -144,4 +174,12 @@ h4{
     width: 50%;
     float: left;
     margin-right: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .projScreen{
+        width: 100%;
+        float:none;
+        margin-right: 0em;
+    }
 }

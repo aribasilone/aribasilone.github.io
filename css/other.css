@@ -223,9 +223,15 @@
     
 }
 @media only screen and (max-width: 400px) {
+    ul.clientList{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
     .digList ul.clientList{
         padding: 0em 0em 1.25em 2em;
         border-left: 1em solid cadetblue;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
     .digList h4{
@@ -347,4 +353,112 @@
     .slide-3x:nth-child(2) img{
         max-width: 175px;
     }
+}
+
+
+/*Start of Resume specific CSS*/
+.scrollable{
+    scroll-behavior: smooth;
+}
+.dlButton{
+    font-size: unset;
+}
+.pvButton,.dlButton{
+    display: inline-block;
+    max-width: 80%;
+}
+
+.tableOfContents{
+    margin: 25px 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1em 1em 3em 1em;
+    color: #1B2D2F;
+    font-weight: bold;
+    text-shadow: 0px 0px 3px  cadetblue;
+
+    /* overflow: auto; */
+}
+.tableOfContents h3{
+    text-shadow: 0px 0px 3px  cadetblue;
+    margin-top: inherit;
+}
+
+.tableOfContents nav{
+    background-color: #1B2D2F;
+    box-shadow: 2px 2px 3px cadetblue;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+.tableOfContents ol::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tableOfContents ol{
+    list-style-position: inside;
+    padding-left: 0em;
+    color: cadetblue;
+    text-shadow: 0px 0px 3px  #000000;
+}
+
+@media only screen and (min-width: 769px){
+    .tableOfContents{
+        margin: 25px 12%;
+    }
+    .tableOfContents nav{
+        margin-left:1.5em;
+        margin-right: 1.5em;
+    }
+    .tableOfContents ol{
+        list-style-position: outside;
+        padding-left: 2em;
+    }
+    .tableOfContents li{
+        float: left;
+        padding: 0em 2.4em 0em 0.2em;
+        
+    }
+}
+
+.tableOfContents a{
+    color: #FFFFFF;
+    font-size: unset;
+    text-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tableOfContents a:hover{
+    text-decoration: solid underline #F0803C;
+}
+.nestedTableOfContents{
+    font-size: unset;
+    list-style-type: lower-roman;
+}
+.content{
+    display: none;
+    -webkit-animation-name: fadeC;
+    -webkit-animation-duration: 2s;
+    animation-name: fadeC;
+    animation-duration: 2s;
+}
+  
+  @-webkit-keyframes fadeC {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeC {
+    from {opacity: .5}
+    to {opacity: 1}
+  }
+.activeContent{
+    display: block;
+    margin-bottom: 3.9em;
+}
+
+.content ul li button{
+    font-size: unset;
+    text-align: center;
 }

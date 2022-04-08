@@ -52,13 +52,53 @@ function collabButton(){
 /*Capstone specific buttons*/
 
 function clickUserManButton(){
-    window.open('resources/User Manual.pdf', '_blank');
+    window.open('resources/docs/User Manual.pdf', '_blank');
 }
 
 function clickPropButton(){
-    window.open('resources/Proposal.pdf', '_blank');
+    window.open('resources/docs/Proposal.pdf', '_blank');
 }
 
 function clickSRSButton() {
     alert("Please contact to request a copy of the SRS document");
+}
+
+/*Resume specific buttons*/
+
+function pdfViewButton(){
+    window.open('resources/docs/Arianna_Basilone_Resume_2022.pdf', '_blank');
+}
+
+function showContentsKeyPress(e,section){
+    // look for window.event in case event isn't passed in
+    e = e || window.event;
+    if (e.keyCode === 13)
+    {
+        showContents(section);
+    }
+}
+
+function showContents(section){
+    try{
+        Array.prototype.forEach.call(contents, elm => {
+            if (elm.id == section || (section=="Work_Experience" && (elm.id=="Tech_Experience" || elm.id =="Business_Experience"))){
+                elm.className = "content activeContent";
+            }
+            else{
+                elm.className="content";
+            }           
+        });   
+        
+        window.location.href="#"+section;
+    }catch{
+
+    }
+    
+}
+
+try {
+    var contents = document.getElementsByClassName('content');
+}
+catch(err) {
+    console.log("Not Resume page");
 }

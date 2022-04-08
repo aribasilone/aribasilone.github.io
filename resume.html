@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="scrollable">
+<head>
+    <title>Arianna Basilone - Resume</title>
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/favicon/aribasilone_logo_96x96.png" sizes="96x96">
+    <!--meta data/SEO-->
+    <meta charset="UTF-8">
+    <meta name = "description" content="Professional profile of Arianna Basilone: Software Developer and Business Advisor.">
+    <meta name = "keywords" content="Software Engineering, Entrepreneur, Business, Freelance, Web Developer"> 
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--styling & scripts-->
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/other.css">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Raleway&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/buttons.js"></script> 
+</head>
+
+<header>
+    
+    <h1 class='center'> Arianna Basilone </h1>
+    <h2> Resume & Background</h2>
+    <div>
+        <nav id="mainNav" class="navBar" aria-label="Main Navigation">
+            <a id="menuIcon" href="javascript:void(0);" class="boxes" onclick="mobileNavButton(this)" aria-haspopup="true" aria-expanded="false"><span class="fa fa-bars"></span></a> 
+            <a href="index.html" class ="boxes"><span class="fa fa-home" aria-hidden="true"></span> Profile</a>       
+            <a href="resume.html" class ="boxes activePage" aria-current="page">Resume</a>
+            <div class="dropdown">
+                <a  href="javascript:void(0);" class="boxes" onclick="projDropdownButton(this)" aria-haspopup="true" aria-expanded="false">Projects <span id="projIcon" class="fa fa-caret-down"></span></a>
+                <div id="projDropContent" class="dropContent">
+                    <a href="capstone.html" class="boxes">Capstone</a>
+                    <a href="projects.html" class="boxes">Side Projects </a>
+                    <a href="freelance.html"class="boxes">Freelance Work</a>
+                </div>                
+            </div> 
+            <a href="skillsets.html" class="boxes">Skillsets</a>         
+        </nav>
+    </div>
+    
+</header>
+
+<body>
+    <div>
+        <div class="tableOfContents">
+            <h3><span class="fa fa-share"></span> Table of Contents</h3>
+            <p>Click one of the links below to to reveal that section's contents</p>
+            <nav aria-label="Resume Page Navigation">
+                <ol>
+                    <li><a tabindex="0" onclick='showContents("Education")' onkeydown='showContentsKeyPress(event,"Education")'>Education</a></li>
+                    <li><a tabindex="0" onclick='showContents("Work_Experience")' onkeydown='showContentsKeyPress(event,"Work_Experience")'>Work Experience</a></li>
+                    <ol class="nestedTableOfContents">
+                        <li><a tabindex="0" onclick='showContents("Tech_Experience")' onkeydown='showContentsKeyPress(event,"Tech_Experience")'>Software & Tech</a></li>
+                        <li><a tabindex="0" onclick='showContents("Business_Experience")' onkeydown='showContentsKeyPress(event, "Business_Experience")'>Business</a></li>
+                    </ol>
+                    <li><a tabindex="0" onclick='showContents("Academic_Projects")' onkeydown='showContentsKeyPress(event, "Academic_Projects")'>Academic Projects</a></li>
+                    <li><a tabindex="0" onclick='showContents("Leadership")' onkeydown='showContentsKeyPress(event,"Leadership")'>Volunteer & Leadership</a></li>
+                    <li><a tabindex="0" onclick='showContents("Conferences")' onkeydown='showContentsKeyPress(event, "Conferences")'>Industry & Conferences</a></li>
+                </ol>
+            </nav>
+        </div>
+        
+        <div id="Education" class="content activeContent">
+            <h3>Education</h3>
+            <ul class="clientList">
+                <li><span>Western University | June 2020</span></br>
+                    B.E.Sc. Software Engineering
+                </li>
+                <li><span>Ivey Business School | June 2020</span></br>
+                    B.A. Honors Business Administration
+                </li>
+                <li>
+                    <span>Scholarships & Academic Distinction </span></br>
+                    <ul class="nestedClientList">
+                        <li>Western Scholarship of Excellence</li>
+                        <li>Dean's Honor List (2016, 2019, 2020)</li>
+                        <li>Cumulative GPA: 3.7 / 4.0 (82%);</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="Work_Experience"></div>
+        <div id="Tech_Experience" class="content">
+            <h3>Software & Tech Work Experience</h3>
+            <ul class="clientList">
+                <li><span>MonstrARTity Creative Community | Aug 2020 - Sept 2021</span></br>
+                    Web Developer
+                </li>
+                <li><span>Craigwood Youth Services | Summer 2019</span></br>
+                    IT Systems Adminstrator
+                </li>
+                <li>
+                    <span>C1 Networx | May - July 2016</span></br>
+                    Junior Software Analyst
+                </li>
+            </ul>
+        </div>
+
+        <div id="Business_Experience" class="content">
+            <h3>Business Finance, Sales and Analysis Work Experience</h3>
+            <ul class="clientList">
+                <li>
+                    <span>C1 Networx | Summer 2018</span></br>
+                    Finance & Accounting Analyst
+                </li>
+                <li>
+                    <span>EMCO Corporation | August 2016</span></br>
+                    Junior Product Manager
+                </li>
+                <li>
+                    <span>Blast Marketing | July - August 2016</span></br>
+                    Brand Ambassador
+                </li>
+            </ul>
+        </div>
+
+        <div id="Academic_Projects" class="content">
+            <h3 >Academic Projects</h3>
+            <ul class="clientList">
+                <li><span>AR We There Yet? | 2020 Western Engineering Capstone</span></br>
+                    Augmented reality (AR) based navigation app, built on Android, to provide a more
+                     intuitive and precise navigation aid for attendees at outdoor venues. 
+                     <button type="button" name="Preview PDF of resume button" onclick="window.location.href='capstone.html';">Go to Capstone page for more details</button>
+                </li>
+                <li><span>Canadian Engineering Accreditation Management System (CEAMS) | 2019 Western Engineering Software Design Project</span></br>
+                    Tracks an engineering program's compliance with accreditation requirements
+                     via a user-friendly web application that processes students' academics.
+                </li>
+                <li><span>Cardiac Connect | 2018 Ivey New Venture Project</span></br>
+                    Online cardiac rehabilitation program that offers virtual resources 
+                    and connects paitents with healthcare professionals and support network.
+                </li>
+            </ul>
+        </div>
+
+        <div id="Leadership" class="content">
+            <h3>Volunteer & Leadership Experience</h3>
+            <ul class="clientList">
+                <li><span>Western Undergraduate Engineering Society | 2016-2018</span></br>
+                    Vice President of Finance & Administration (2017-2018),
+                    Software 2nd Year Representative (2016-2017) 
+                </li>
+                <li><span>Western Orientation Program | 2016-2018</span></br>
+                    Orientation Leader, Off-Campus Flag Football Offensive Coach, Off-Campus Intramural Soccer Team Lead
+                </li>
+            </ul>
+        </div>
+        
+        <div id="Conferences" class="content">
+            <h3 >Industry & Conferences</h3>
+            <ul class="clientList">
+                <li><span>MonstrARTity MAD Program | 2021 Season</span></br>
+                    Speaker & Workshop Host
+                </li>
+                <li><span>Canadian Federation of Engineering Students | January 2019</span></br>
+                    Congress Delegate
+                </li>
+                <li><span>Engineering Student Societies' Council of Ontario | June 2017</span></br>
+                    AGM Delegate
+                </li>
+            </ul>
+        </div>
+
+        <p class="bio">
+            A PDF copy of the official and condensed resume is available for viewing and download.  
+        </p>
+        <button class="pvButton" type="button" name="Preview PDF of resume button" onclick="pdfViewButton()">
+            <span class="fa fa-file"></span> Preview PDF of Resume
+        </button>
+        <a class="dlButton" href="resources/docs/Arianna_Basilone_Resume_2022.pdf" download rel="noopener noreferrer" target="_blank">
+            <button type="button" name="Download resume button">
+                <span class="fa fa-download"></span> Download Basilone Resume
+            </button>
+        </a>
+        
+        <div class="collabContainer">
+            <div class="homeIconBoxes">
+                <span class="fa fa-rocket collabIcons" aria-hidden="true"></span>
+            </div>
+            <div class="homeIconBoxes">
+                <span class="fa fa-lightbulb-o collabIcons" aria-hidden="true"></span>
+            </div>
+            <div class="homeIconBoxes">
+                <span class="fa fa-leaf collabIcons" aria-hidden="true"></span>
+            </div>
+            <p class="collab">
+                Have a project, idea, or startup instead? I can be of assistance there too!
+            </p> 
+            <button type="button" name="Collab button" onclick="collabButton()">Contact to Collaborate</button>
+        </div>
+                 
+    </div>
+</body>
+
+<footer>
+    <!-- icons -->
+    <div class="footerIconsBox">        
+        <a href="mailto:abasilone.hba2020@ivey.ca" title="Email link"><img id='mail' class="icon" src="resources/icons/email.png" alt="Email Icon"></a>
+        &nbsp;
+        <a href="https://github.com/aribasilone" target="_blank" title="Link to GitHub profile"> <img id='gh' class="icon" src="resources/icons/github.png" alt="GitHub Icon"></a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/arianna-basilone/" target="_blank" title="Link to LinkedIn profile"><img id='li' class="icon" src="resources/icons/li.png" alt="LinkedIn Icon"></a>
+    </div>
+    <p class="footerText">&copy; Arianna Basilone 2022</p>
+</footer>
+
+</html>

@@ -39,7 +39,7 @@ p{
 a{
     color: white;
 }
-p, a, ul{
+p, a, ul, ol{
     font-size: 1.3em;
 }
 
